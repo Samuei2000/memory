@@ -17,7 +17,8 @@ defmodule PensieveWeb.Router do
   scope "/", PensieveWeb do
     pipe_through :browser
 
-    get "/", PageController, :home
+    get "/about", PageController, :about
+    get "/", PageController, :home ##The default router is using get to map the route GET / to the home action of PensieveWeb.PageController.
   end
 
   # Other scopes may use custom stacks.
