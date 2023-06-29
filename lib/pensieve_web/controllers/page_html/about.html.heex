@@ -1,0 +1,20 @@
+ <h1 class="text-3xl mb-6">About</h1>
+
+ <p>This is the Pensieve app, built using Elixir and Phoenix.</p>
+
+ <p>
+   &copy; <%= Date.utc_today.year %>
+
+  <%= if Date.leap_year?(Date.utc_today) do %>
+     (a leap year)
+   <% else %>
+     (not a leap year)
+   <% end %>
+ </p>
+ <ul>
+  <%= for number <- 1..10 do %>
+    <li><%= number %></li>
+  <% end %>
+</ul>
+
+<p><b>This text is bold</b></p>
