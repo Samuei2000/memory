@@ -1,12 +1,13 @@
-<%!-- <h1 class="text-3xl mb-2">New Memory</h1>
+<%!-- <h1 class="text-3xl mb-2">Edit Memory</h1>
+ 
+<.memory_form changeset={@changeset} action={~p"/memories/#{@memory}"} />
 
-<.memory_form changeset={@changeset} action={~p"/memories"} />
+ <.link href={~p"/memories/#{@memory}"} class="text-sky-500 hover:underline">Back</.link> --%>
 
-<.link href={~p"/memories"} class="text-sky-500 hover:underline">Back</.link> --%>
-<h1 class="text-3xl mb-2">New Memory</h1>
+ <h1 class="text-3xl mb-2">Edit Memory</h1>
 
 
-<.simple_form :let={f} for={@changeset} action={~p"/memories"}>
+<.simple_form :let={f} for={@changeset} action={~p"/memories/#{@memory}"}>
 
   <.error :if={@changeset.action}>
 
@@ -28,6 +29,5 @@
 
 
 <br />
-
 
 <.link href={~p"/memories"} class="text-sky-500 hover:underline">Back</.link>
