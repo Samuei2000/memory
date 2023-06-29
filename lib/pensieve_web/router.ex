@@ -19,6 +19,7 @@ defmodule PensieveWeb.Router do
 
     get "/about", PageController, :about
     get "/", PageController, :home ##The default router is using get to map the route GET / to the home action of PensieveWeb.PageController.
+    resources "/memories", MemoryController
   end
 
   # Other scopes may use custom stacks.
