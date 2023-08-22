@@ -1,4 +1,4 @@
-# Pensieve
+# Memory
 
 To start your Phoenix server:
 
